@@ -48,7 +48,7 @@ export default class SwipeableFlatlist extends Component{
 
 
      renderItem = data => (
-        <TouchableHighlight>
+        <TouchableOpacity>
         <ListItem
        leftElement={<Icon name="book" type="font-awesome" color ='#696969'/>}
        title={data.item.book_name}
@@ -56,7 +56,7 @@ export default class SwipeableFlatlist extends Component{
        subtitle={data.item.message}
        bottomDivider
      />
-        </TouchableHighlight>
+        </TouchableOpacity>
     );
 
      renderHiddenItem = (data, item) => (
